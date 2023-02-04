@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap");
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(22, 36, 63);
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: darkgrey;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 35px;
+  border-radius: 10px;
+  user-select: none;
+}
+
+#display-area {
+  width: 100%;
+  margin: 3vh 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, minmax(40px, auto));
+  word-wrap: break-word;
+  padding-bottom: 20px;
+  border-bottom: 2px rgb(56, 56, 56) solid;
+}
+
+#display-area .currentInput {
+  text-align: center;
+  height: 8vh;
+  color: rgb(28, 23, 23);
+  font-size: xx-large;
+  line-height: 2;
+  word-wrap: break-word;
+}
+
+#display-area .answerScreen {
+  text-align: right;
+  color: black;
+  height: 7px;
+  line-height: 3px;
+  font-size: larger;
+}
+
+.keypad-btns {
+  display: grid;
+  grid: repeat(5, 70px) / repeat(4, 70px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.keypad-btns button {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(65, 64, 64);
+  color: aliceblue;
+  font-size: x-large;
+}
+
+.keypad-btns .f-btn {
+  color: #000;
+  background: #00e6f6;
+  font-weight: bold;
+}
+
+.n-btn:hover {
+  background-color: #282a3a;
+}
+
+.f-btn:hover {
+  background-color: #00c6d4;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section id="display-area">
+        <div class="currentInput"></div>
+        <div class="answerScreen">0</div>
+      </section>
+      <section class="keypad-btns">
+        <button type="button" class="f-btn" id="clear" value="">C</button>
+        <button type="button" class="f-btn" id="erase" value="">
+          <i class="fa-solid fa-eraser"></i>
+        </button>
+        <button type="button" class="f-btn" value="/">/</button>
+        <button type="button" class="f-btn" value="%">%</button>
+        <button type="button" class="n-btn" value="7">7</button>
+        <button type="button" class="n-btn" value="8">8</button>
+        <button type="button" class="n-btn" value="9">9</button>
+        <button type="button" class="f-btn" value="*">*</button>
+        <button type="button" class="n-btn" value="4">4</button>
+        <button type="button" class="n-btn" value="5">5</button>
+        <button type="button" class="n-btn" value="6">6</button>
+        <button type="button" class="f-btn" value="-">-</button>
+        <button type="button" class="n-btn" value="1">1</button>
+        <button type="button" class="n-btn" value="2">2</button>
+        <button type="button" class="n-btn" value="3">3</button>
+        <button type="button" class="f-btn" value="+">+</button>
+        <button type="button" class="n-btn" value="00">00</button>
+        <button type="button" class="n-btn" value="0">0</button>
+        <button type="button" class="n-btn" value=".">.</button>
+        <button type="button" class="f-btn" id="evaluate" value="">=</button>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
